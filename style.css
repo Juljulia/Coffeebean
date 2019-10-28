@@ -1,16 +1,22 @@
-body {
+* {
+    box-sizing: border-box;
 }
 
+body {
 
-.mobile-menu {
-    width: 25px;
-    height: 3px;
-    background-color: black;
-    margin: 7px 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
 }
 
 .container-mobile-menu {
     margin: 10px 0 0 10px;
+}
+
+.icon {
+    margin: 0px 0px 0px 20px; /*top right bottom left*/
 }
 
 .section-1 {
@@ -29,16 +35,32 @@ body {
 }
 
 .section-3 {
-    background-image: url(coffee-3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #EBD8C6;
     height: 100vh;
+}
+
+.coffee-plant {
+    width: 20vw;
+    height: auto;
 }
 
 footer {
-    background-image: url(coffee-1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 100vh;
-
 }
+
+@media screen and (max-width: 600px) {
+    .mobile-menu {
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 7px 0;
+    }
+    
+    nav {
+        opacity: 0;
+    }
+    
+    .icon {
+        opacity: 0;
+    }
+    }
