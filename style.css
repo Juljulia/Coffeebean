@@ -59,14 +59,20 @@ p, a {
 
 
 .section-2 {
-    background-image:  url(coffee-2.jpg);
+    background-image: url(pour-coffee.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Big Shoulders Display', cursive;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 25px;
 }
+
+.nutrition {
+    position: relative;
+    left: 25px;
+    top: 25px;
+}
+
 
 .section-3 {
     background-color: #EBD8C6;
@@ -179,7 +185,3 @@ footer {
     p {
         font-size: 14px;
     }
-
-
-
-}
