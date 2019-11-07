@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body {
@@ -37,10 +38,6 @@ nav > a {
     height: 40px;
 }
 
-p, a {
-    font-family: 'Ubuntu', sans-serif;
-}
-
 .section-1 {
     background-image: url(coffee-1.jpg);
     background-repeat: no-repeat;
@@ -59,18 +56,35 @@ p, a {
 
 
 .section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-image: url(pour-coffee.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Big Shoulders Display', cursive;
     height: 100vh;
     padding: 25px;
 }
 
-.nutrition {
+.section-2 .title {
     position: relative;
-    left: 25px;
+    left: 20px;
     top: 25px;
+}
+
+.nutrition {
+    font-size: 40px;
+}
+
+.content p{
+    font-size: 24px;
+    line-height: 5px;
+    margin: 0 0 50px 20px
+}
+
+p:nth-child(5){
+    font-size: 30px;
+    font-weight: bold;
 }
 
 
@@ -159,7 +173,13 @@ footer {
 }
 
 /*smaller screens*/
-@media screen and (max-width: 599px) {
+@media screen and (min-width: 599px) {
+    /* everywhere */
+
+
+
+
+   /*  section 1 */
     
     .container-mobile-menu {
         margin: 10px 0 0 10px;
@@ -179,9 +199,42 @@ footer {
     .icon {
         display: none;
     }
-    }
-
+    
 
     p {
         font-size: 14px;
     }
+
+    /* section 2 */
+
+    .section-2 {
+        display: flex;
+        flex-direction: row;
+        align-items: space-between;
+    }
+    .section-2 .title {
+        position: relative;
+        left: 15%;
+        top: 15%;
+    }
+    
+    .nutrition {
+        font-size: 60px;
+    }
+    
+    .content p{
+        position:relative;
+        right: 40%;
+        top: 50%;
+        font-size: 30px;
+        line-height: 10px;
+        
+    }
+    
+    p:nth-child(5){
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    /* section 3 */
+}
