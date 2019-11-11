@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     margin: 0px;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 body {
@@ -13,6 +12,9 @@ h1, h2, h3 {
     font-family: 'Chivo', Arial, sans-serif;
 }
 
+a, p {
+    font-family: 'Ubuntu', sans-serif;
+}
 /*** SECTION 1 ***/
 .section-1 {
     background: url(coffee-front.jpg) no-repeat center center fixed;
@@ -88,19 +90,32 @@ nav { /*navigation menu which is a hamburger menu in mobile*/
     top: 25px;
 }
 
+
 .nutrition {
     font-size: 40px;
+    
+}
+
+.section-2 h1 {
+    font-size: 20px;
+    font-family: 'Chivo', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bolder;
 }
 
 .content p {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 5px;
-    margin: 0 0 50px 20px
+    margin: 0 0 50px 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-weight: 300;
 }
 
-p:nth-child(5){
-    font-size: 30px;
-    font-weight: bold;
+.light {
+    font-weight: 100;
+    font-size: 18px;
 }
 
 /*** SECTION 3 ***/
@@ -155,7 +170,7 @@ p:nth-child(5){
 .left-section-4 {
     background: url(coffee9.jpg);
     background-repeat: no-repeat;
-    background-position: center center fixed;
+    background-position: center;
     background-size: cover;
     height: 50vh;
 }
@@ -163,7 +178,7 @@ p:nth-child(5){
 .middle-section-4 {
     background: url(coffee-and-coffee-beans.jpg);
     background-repeat: no-repeat;
-    background-position: center center fixed;
+    background-position: center;
     background-size: cover;
     height: 50vh;
 }
@@ -171,7 +186,7 @@ p:nth-child(5){
 .right-section-4 {
     background: url(coffee8.jpg);
     background-repeat: no-repeat;
-    background-position: center center fixed;
+    background-position: center;
     background-size: cover;
     height: 50vh;
 }
@@ -260,6 +275,7 @@ footer {
         border-radius: 20px;
         padding: 10px 10px;
         margin: 0px 40px;
+        z-index: 1;
     }
 
     .first-page-heading { /* puts h1 on one row instead of two like in mobile */
@@ -298,10 +314,17 @@ footer {
     
     .content p{
         position:relative;
-        right: 40%;
         top: 50%;
+        right: 250px;
         font-size: 30px;
         line-height: 10px;
+        font-weight: 200;
+        letter-spacing: 2px;
+    }
+
+    .light {
+        font-weight: 100;
+        font-size: 28px;
     }
     
     p:nth-child(5){
