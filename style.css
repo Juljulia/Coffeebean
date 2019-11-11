@@ -101,7 +101,7 @@ nav { /*navigation menu which is a hamburger menu in mobile*/
 
 .nutrition {
     font-size: 40px;
-   
+    
 }
 
 .section-2 h1 {
@@ -113,11 +113,17 @@ nav { /*navigation menu which is a hamburger menu in mobile*/
 }
 
 .content p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 5px;
     margin: 0 0 50px 20px;
     font-weight: 200;
     letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.light {
+    font-weight: 100;
+    font-size: 18px;
 }
 
 /*** SECTION 3 ***/
@@ -346,12 +352,17 @@ footer {
     
     .content p{
         position:relative;
-        right: 40%;
         top: 50%;
+        right: 250px;
         font-size: 30px;
         line-height: 10px;
         font-weight: 200;
         letter-spacing: 2px;
+    }
+
+    .light {
+        font-weight: 100;
+        font-size: 28px;
     }
     
     p:nth-child(5){
