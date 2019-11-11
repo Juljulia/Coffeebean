@@ -130,7 +130,7 @@ nav { /*navigation menu which is a hamburger menu in mobile*/
     height: 50vh;
     width: 90vw;
     object-fit: contain;
-    margin: 20px 0px;
+    margin: 25px 0px;
 }
 
 .page-3-content {
@@ -153,12 +153,31 @@ nav { /*navigation menu which is a hamburger menu in mobile*/
 .page-3-content > p {
     text-align: center;
     font-size: 14px;
-    margin-top: 60px;
     line-height: 1.8;
+    margin-top: 20px;
+}
+
+.blink_me {
+    animation: blinker 1s linear infinite;
+  }
+  
+@keyframes blinker {
+    50% {
+      opacity: 0.5;
+    }
 }
 
 .page-3-content .poop {
-    font-size: 60px;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 10px;
+    animation: bounce 1s linear infinite;
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0px)}
+    50% {transform: translateY(-10px)}
+    100% {transform: translateY(0px)}
 }
  
 /*** SECTION 4 ***/
@@ -209,8 +228,7 @@ footer {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-left: 10vw;
+    padding-left: 8vw;
 }
 
 .right-footer {
@@ -223,8 +241,7 @@ footer {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-left: 10vw;
+    padding-left: 8vw;
 }
 
 .left-footer > h2, .right-footer > h2 {
@@ -233,14 +250,26 @@ footer {
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 32px;
+    margin: 100px 0px 20px 0px;
+}
+
+.left-footer > a {
+    text-decoration: none;
+    background-color: rgb(187, 148, 112);
+    color: white;
+    padding: 10px;
+    width: 100px;
+    margin-top: 10px;
 }
 
 .right-footer > h3 {
     color: rgb(187, 148, 112);
+    padding: 0px 0px 10px 0px;
 }
 
 .left-footer > p, .right-footer > p {
     color: white;
+    padding: 10px 0px;
 }
 
 /*** LARGER SCREENS ***/
@@ -312,7 +341,7 @@ footer {
         font-size: 60px;
     }
     
-    .content p{
+    .content p {
         position:relative;
         top: 50%;
         right: 250px;
@@ -349,6 +378,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin: 0px 20px;
     }
 
     .page-3-content > h1 {
@@ -363,6 +393,11 @@ footer {
     .page-3-content > p {
         text-align: left;
         font-size: 16px;
+        margin-top: 40px;
+    }
+
+    .page-3-content .poop {
+        margin-top: 60px;
     }
 
     /* section 4 */
@@ -373,17 +408,7 @@ footer {
         display: flex;
     }
     
-    .left-section-4 { 
-        height: 50vh;
-        width: 50vw;
-    }
-
-    .middle-section-4 {
-        height: 50vh;
-        width: 50vw;
-    }
-
-    .right-section-4 {
+    .left-section-4, .middle-section-4, .right-section-4 { 
         height: 50vh;
         width: 50vw;
     }
@@ -397,13 +422,16 @@ footer {
         flex-direction: row;
     }
     
-    .left-footer {
+    .left-footer, .right-footer {
         height: 75vh;
         width: 50vw;
     }
-    
-    .right-footer {
-        height: 75vh;
-        width: 50vw;
+
+    .left-footer > h2, .right-footer > h2 {
+        margin: 150px 0px 20px 0px;
+    }
+
+    .left-footer > a {
+        margin-top: 20px;
     }
 }
