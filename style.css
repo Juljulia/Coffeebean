@@ -94,10 +94,10 @@ nav { /*navigation menu which is a hamburger menu in mobile*/
 }
 
 .section-2 h1 {
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Chivo', Arial, sans-serif;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     font-weight: bolder;
     line-height: 30px;
 }
@@ -337,12 +337,11 @@ footer {
     .section-2 .title {
         margin: 150px 0 0 100px;
     }
+    
     .nutrition {
         font-size: 60px;
         letter-spacing: 3px;
-
     }
-    
     .section-2 h1 {
         font-size: 20px;
         font-family: 'Chivo', Arial, sans-serif;
@@ -352,7 +351,7 @@ footer {
         line-height: 30px;
     }
     .content {
-        display:flex;
+        display: flex;
         flex-direction: column;
         justify-content: space-around;
         box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
